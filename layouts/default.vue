@@ -30,17 +30,17 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="md:hidden" id="mobile-menu">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <NuxtLink to="/" class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</NuxtLink>
+        <NuxtLink to="/" class="text-black block px-3 py-2 rounded-md text-base font-medium">Home</NuxtLink>
 
-        <NuxtLink to="/about" class="hidden text-white hover:bg-orange-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">About</NuxtLink>
+        <NuxtLink to="/about" class="hidden text-black hover:bg-orange-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">About</NuxtLink>
 
-        <NuxtLink to="/downloads" class="text-white hover:bg-orange-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Downloads</NuxtLink>
+        <NuxtLink to="/downloads" class="text-black hover:bg-orange-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Downloads</NuxtLink>
 
-        <a href="#" class="hidden text-white hover:bg-orange-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Wiki</a>
+        <a href="#" class="hidden text-black hover:bg-orange-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Wiki</a>
 
-        <a href="#" class="hidden text-white hover:bg-orange-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+        <a href="#" class="hidden text-black hover:bg-orange-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
 
-        <a href="#" class="hidden text-white hover:bg-orange-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Get Involved/Contact Us</a>
+        <a href="#" class="hidden text-black hover:bg-orange-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Get Involved/Contact Us</a>
       </div>
       </div>
     
