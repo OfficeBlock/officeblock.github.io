@@ -54,6 +54,6 @@
 .nuxt-link-exact-active {
       --tw-bg-opacity: 1;
     background-color: rgba(234, 88, 12, var(--tw-bg-opacity));
-    color: white;
+    color: black;
 }
 </style>
