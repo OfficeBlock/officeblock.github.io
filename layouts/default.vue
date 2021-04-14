@@ -10,7 +10,7 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-white hover:bg-orange-600 hover:text-gray-100" -->
-              <NuxtLink to="/" class="text-black px-3 py-2 rounded-md text-sm font-medium">Home</NuxtLink>
+              <NuxtLink to="/" class="text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium">Home</NuxtLink>
 
               <NuxtLink to="/about" class="hidden text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium">About</NuxtLink>
 
