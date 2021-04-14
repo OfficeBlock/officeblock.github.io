@@ -4,7 +4,7 @@
         <h1 class="text-4xl font-bold">Under construction</h1>
 
         <div class="hidden">
-<h1 class="text-4xl font-bold">Games</h1>
+<h1 class="text-4xl font-bold">Works</h1>
    <ul>
        <li v-for="download of downloads" :key="download.name">
            <a :href="download.url">
