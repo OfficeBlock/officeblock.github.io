@@ -5,6 +5,7 @@
 
       <div class="">
         <h1 class="text-4xl font-bold">Works</h1>
+        <span>Currently, our archived works are only available on Windows.</span>
         <div class="flex flex-wrap -m-4">
           <div
             class="xl:w-1/3 md:w-1/2 p-4 mt-2"
@@ -118,27 +119,31 @@
 </template>
 <script>
 export default {
+  head() {
+    return {
+    title: 'Downloads - OfficeBlock'
+    }
+  },
   data() {
     return {
       downloads: [
         {
           name: "Hangman Demo",
-          url:
-            "https://cdn.discordapp.com/attachments/829435852690030624/829435999833948210/Hangman_Demo.exe",
+          url: "https://cdn.discordapp.com/attachments/829435852690030624/829435999833948210/Hangman_Demo.exe",
           type: "Game",
           "description":"The first game on Officeblock",
         },
         {
           name: "Pixels Neon 2",
-          url: "https://bluepload.unstable.life/selif/pixelsneon2.exe",
+          url: "https://bluepload.unstable.life/pixelsneon2.exe",
           type: "Game",
           "description":"PLS GIVE DESC",
         },
         {
           name: "Das Shuttlebus",
-          url: "https://bluepload.unstable.life/selif/dasshuttlebus.exe",
+          url: "https://bluepload.unstable.life/dasshuttlebus.exe",
           type: "Animation",
-          warnings: ["strong language"],
+          warnings: ["Strong Language"],
           "description":"PLS GIVE DESC",
         },
         {
@@ -146,7 +151,7 @@ export default {
           url:
             "https://cdn.discordapp.com/attachments/829435852690030624/829436241337516112/Spin_a_Number.exe",
           type: "Utility",
-          "description":"PLS GIVE DESC",
+          "description":"Spin a number from 1 to 6",
         }
       ]
     };
