@@ -16,7 +16,7 @@
 
               <NuxtLink to="/downloads" class="text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium">Downloads</NuxtLink>
 
-              <a href="#" class="hidden text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+              <NuxtLink to="/search" class="hidden text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium">Search the Archive</NuxtLink>
 
               <a href="#" class="hidden text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium">Wiki</a>
 
@@ -36,6 +36,8 @@
 
         <NuxtLink to="/downloads" class="text-black hover:bg-green-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Downloads</NuxtLink>
 
+        <NuxtLink to="/search" class="hidden text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium">Search the Archive</NuxtLink>
+                
         <a href="#" class="hidden text-black hover:bg-green-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Wiki</a>
 
         <a href="#" class="hidden text-black hover:bg-green-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
