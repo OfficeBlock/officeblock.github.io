@@ -5,11 +5,10 @@
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <img class="h-12 w-12 inline" src="/logo.svg" alt="OfficeBlock" /><span class="inline text-orange-600 text-2xl font-bold align-middle"> fficeblock</span>
+              <img class="h-12 w-12 inline" src="/logo.svg" alt="OfficeBlock" /><span class="inline text-gray-800 text-3xl font-bold align-middle"> OfficeBlock</span>
             </div>
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-white hover:bg-orange-600 hover:text-gray-100" -->
                 <NuxtLink
                   to="/"
                   class="text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium"
@@ -18,7 +17,7 @@
 
                 <NuxtLink
                   to="/about"
-                  class="hidden text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium"
+                  class="text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium"
                   >About</NuxtLink
                 >
 
@@ -35,8 +34,8 @@
                 >
 
                 <a
-                  href="#"
-                  class="hidden text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium"
+                  href="https://officeblock.miraheze.org/wiki/"
+                  class="text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium"
                   >Wiki</a
                 >
 
@@ -61,7 +60,7 @@
 
           <NuxtLink
             to="/about"
-            class="hidden text-black hover:bg-green-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium"
+            class="text-black hover:bg-green-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium"
             >About</NuxtLink
           >
 
@@ -77,10 +76,10 @@
             >Search the Archive</NuxtLink
           >
 
-          <a
-            href="#"
-            class="hidden text-black hover:bg-green-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium"
-            >Wiki</a
+          <NuxtLink
+            to="https://officeblock.miraheze.org/wiki/"
+            class="text-black hover:bg-green-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium"
+            >Wiki</NuxtLink
           >
 
           <a

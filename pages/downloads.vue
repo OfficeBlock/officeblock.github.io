@@ -1,11 +1,11 @@
 <template>
   <main>
     <div class="py-2 max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 container mx-auto px-4">
-      <h1 class="hidden text-4xl font-bold">Under construction</h1>
+      <h1 class="hidden text-4xl font-bold">This site is under construction</h1>
 
       <div class="">
         <h1 class="text-4xl font-bold">Works</h1>
-        <span>Currently, our archived works are only available on Windows.</span>
+        <span>Unfortunately, our archived works are only available on Windows. We are working on support for other operating systems, as well as a launcher distribution.</span>
         <div class="flex flex-wrap -m-4">
           <div
             class="xl:w-1/3 md:w-1/2 p-4 mt-2"
@@ -102,13 +102,15 @@
                 </svg>
               </div>
               <a :href="download.url"
-                ><h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                ><h2 class="text-xl text-gray-900 font-medium title-font mb-2">
                   {{ download.name }}
                 </h2></a
               >
               <p class="leading-relaxed text-base">
-                <p v-for="warning of download.warnings" :key="warning + download.name" class="text-red-500">Warning: {{warning}}</p>
-                {{ download.description }}
+                <p v-for="warning of download.warnings" :key="warning + download.name" class="text-red-500">
+                  Warning: {{warning}}
+                </p>
+                <span class="text-base">{{ download.description }}</span>
               </p>
             </div>
           </div>
@@ -129,29 +131,32 @@ export default {
       downloads: [
         {
           name: "Hangman Demo",
-          url: "https://cdn.discordapp.com/attachments/829435852690030624/829435999833948210/Hangman_Demo.exe",
+          url: "/downloads/Hangman Demo.exe",
+          tech: "PowerPoint",
           type: "Game",
-          "description":"The first game on Officeblock",
+          "description":"The first game on Officeblock, this is a demo of Hangman.",
         },
         {
           name: "Pixels Neon 2",
-          url: "https://bluepload.unstable.life/pixelsneon2.exe",
+          url: "/downloads/Pixels Neon 2.exe",
+          tech: "PowerPoint",
           type: "Game",
-          "description":"PLS GIVE DESC",
+          "description":"",
         },
         {
           name: "Das Shuttlebus",
-          url: "https://bluepload.unstable.life/dasshuttlebus.exe",
+          url: "/downloads/Das Shuttlebus.exe",
+          tech: "PowerPoint",
           type: "Animation",
-          warnings: ["Strong Language"],
-          "description":"PLS GIVE DESC",
+          warnings: ["Strong Language", ],
+          "description":"",
         },
         {
           name: "Spin a Number",
-          url:
-            "https://cdn.discordapp.com/attachments/829435852690030624/829436241337516112/Spin_a_Number.exe",
+          url: "/downloads/Spin a Number.exe",
+          tech: "PowerPoint",
           type: "Utility",
-          "description":"Spin a number from 1 to 6",
+          "description":"Spins a random number from 1 to 6.",
         }
       ]
     };
