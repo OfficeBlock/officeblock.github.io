@@ -8,10 +8,10 @@
               <span>Users</span>
             </h2>
             <p class="text-gray-500 leading-relaxed">
-                VFDan: The Creator of Officeblock
+                <img class="h-12 w-12 inline" src="/images/vfdan.webp" alt="VFDan" /><span class="inline text-white-800 text-1xl font-bold align-middle">VFDan: The Creator of Officeblock</span>
             </p>
             <p class="text-gray-500 leading-relaxed">
-                GrahamSH: The Main Creator of The Website
+               <img class="h-12 w-12 inline" src="/images/grahamsh.png" alt="Grahamsh" /><span class="inline text-white-800 text-1xl font-bold align-middle">GrahamSH: The Main Creator of The Website</span>
             </p>
             <p class="text-gray-500 leading-relaxed">
                 childishbeat: The Co-Creator of Officeblock
@@ -31,10 +31,10 @@
                 Nuxt.js Framework: <a class='text-green-400 underline' href='https://nuxtjs.org/'>Nuxt.js</a>
             </p>
             <p class="text-gray-500 leading-relaxed">
-                Gitpod for Testing: <a class='text-green-400 underline' href='https://gitpod.io/'>Gitpod</a>
+                Gitpod: <a class='text-green-400 underline' href='https://gitpod.io/'>Gitpod</a>
             </p>
             <p class="text-gray-500 leading-relaxed">
-                Github for The Website: <a class='text-green-400 underline' href='https://github.com/'>Github</a>
+                Github: <a class='text-green-400 underline' href='https://github.com/'>Github</a>
             </p>
           </div>
         </div>

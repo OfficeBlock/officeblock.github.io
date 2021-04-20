@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen py-2 max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 container mx-auto px-4">
 
-    <section id="faqs" class="px-4 sm:px-6 lg:px-8 py-16 lg:py-24 xl:py-32">
+    <section id="faqs" class="px-4 sm:px-6 lg:px-8 py-16 lg:py-24 xl:py-32" style="padding-top: 2em;">
       <div class="max-w-container mx-auto">
         <h2 class="text-center text-3xl tracking-tight mb-14">
           Frequently asked questions
@@ -27,12 +27,12 @@ export default {
     return {
       questions: [
         {
-          q: "Do you have a launcher that contains all the games?",
-          answer: "We are currently working on it, but we do have an online archive which you can view by clicking \"<a class='text-green-400 underline' href='/downloads'>Downloads</a>\" in the navbar."
+          q: "Do you have an archive application that contains all the games?",
+          answer: "We are currently working on it, but we do have an online archive which you can view <a class='text-green-400 underline' href='/downloads'>here</a>."
         },
         {
           q: "Do you have a Trello board or something?",
-          answer: "Yes, we have a Trello <a class='text-green-400 underline' href='https://trello.com/b/sZapXnRX/officeblock'>here</a>."
+          answer: "Yes, we have a Trello board which you can view <a class='text-green-400 underline' href='https://trello.com/b/sZapXnRX/officeblock'>here</a>."
         }
       ]
     };
