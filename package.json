@@ -1,0 +1,22 @@
+{
+  "name": "officeblock.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.0.0",
+    "@heroicons/vue": "^1.0.1",
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.5",
+    "@nuxtjs/tailwindcss": "^4.0.1",
+    "postcss": "^8.2.8"
+  }
+}
