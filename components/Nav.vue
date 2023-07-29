@@ -5,7 +5,7 @@
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <img class="h-12 w-12 inline" src="/images/logo.svg" alt="OfficeBlock Logo" /><span class="inline text-white-800 text-3xl font-bold align-middle"> OfficeBlock</span>
+              <img class="h-12 w-12 inline" src="/images/logo.svg" alt="OfficeBlock Logo" /><span class="inline text-zinc-900 dark:text-zinc-900 text-3xl font-bold align-middle"> OfficeBlock</span>
             </div>
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
@@ -35,16 +35,16 @@
                   >FAQ</NuxtLink
                 >
 
-                <a
-                  href="https://officeblock.miraheze.org/wiki/"
+                <NuxtLink
+                  to="https://officeblock.miraheze.org/wiki/"
                   class="text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium"
-                  >Wiki</a
+                  >Wiki</Nuxtlink
                   >
 
                 <a
                   href="#"
-                  class="hidden text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium"
-                  >Get Involved/Contact Us</a
+                  class="text-black hover:bg-green-600 hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium"
+                  >Contact Us</a
                 >
                 <color-mode class="self-end"/>
               </div>
@@ -54,16 +54,16 @@
       </div>
       <!-- Mobile menu, show/hide based on menu state. -->
       <div class="md:hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div class="px-2 pt-2 pb-3 sm:px-3 grid grid-cols-2 text-center gap-1">
           <NuxtLink
             to="/"
-            class="text-black hover:bg-green-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium"
+            class="text-black hover:bg-green-600 hover:text-gray-100 block py-2 rounded-md text-base font-medium"
             >Home</NuxtLink
           >
 
           <NuxtLink
             to="/downloads"
-            class="text-black hover:bg-green-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium"
+            class="text-black hover:bg-green-600 hover:text-gray-100 block py-2 rounded-md text-base font-medium"
             >Downloads</NuxtLink
           >
 
@@ -79,10 +79,10 @@
             >Wiki</a
           >
 
-          <a
-            href="/faq"
+          <NuxtLink
+            to="/faq"
             class="text-black hover:bg-green-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium"
-            >FAQ</a
+            >FAQ</NuxtLink
           >
 
           <a
@@ -90,17 +90,20 @@
             class="hidden text-black hover:bg-green-600 hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium"
             >Get Involved/Contact Us</a
           >
-        <color-mode class="self-end"/>
+        <color-mode class="self-end text-center"/>
         </div>
       </div>
     </nav>
 </template>
 <style scoped>
 .nuxt-link-exact-active {
-  --tw-bg-opacity: 1;
-
-  background-color: rgba(94, 186, 223 var(--tw-bg-opacity));
-  color: rgb(240, 236, 218);
+  background-color: rgb(187 247 208);
+  color: black;
 }
-
+#mobile-menu > div > :last-child:nth-last-child(odd) {
+  grid-column: auto / span 2; 
+}
+#mobile-menu > div > :first-child:nth-last-child(even), #mobile-menu > div > :first-child:nth-last-child(even) ~ * {
+  grid-column: auto / span 1;
+}
 </style>

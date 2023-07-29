@@ -27,12 +27,13 @@ export default {
     return {
       questions: [
         {
-          q: "Do you have an archive application that contains all the games?",
-          answer: "We are currently working on it, but we do have an online archive which you can view <a class='text-green-400 underline' href='/downloads'>here</a>."
+          q: "Help! I use Avast or AVG, and OfficeBlock isn't working.",
+          answer: "These antiviruses (and some other smaller ones) interfere with the Flashpoint Launcher, which is what OfficeBlock uses to display the games and to run them. \
+          You can follow <a class='alink' href='https://flashpointarchive.org/datahub/Troubleshooting_Antivirus_Interference'>these steps</a> to set an exclusion."
         },
         {
           q: "Do you have a Trello board or something?",
-          answer: "Yes, we have a Trello board which you can view <a class='text-green-400 underline' href='https://trello.com/b/sZapXnRX/officeblock'>here</a>."
+          answer: "Yes, we have a Trello board which you can view <a class='alink' href='https://trello.com/b/sZapXnRX/officeblock'>here</a>."
         }
       ]
     };

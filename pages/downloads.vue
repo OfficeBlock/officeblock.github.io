@@ -1,12 +1,11 @@
 <template>
   <main>
-    <div class="min-h-screen py-2 max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 container mx-auto px-4">
+    <div class="py-2 max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 container mx-auto px-4">
       <h1 class="hidden text-4xl font-bold">This site is under construction</h1>
 
       <div class="">
-        <h1 class="text-4xl font-bold">Works</h1>
-        <p class='font-semibold'>Note: Antiviruses may flag our programs as suspicious as these programs are new; these are false positives.</p>
-        <p>Unfortunately, our archived works are only available on Windows at the moment. We are working on support for other operating systems, as well as a launcher distribution.</p>
+        <h1 class="text-4xl font-bold">Downloads</h1>
+        <p class='font-semibold'>Unfortunately we only have a launcher distribution for Windows at the moment.</p>
         <div class="flex flex-wrap -m-4">
           <div
             class="xl:w-1/3 md:w-1/2 p-4 mt-2"
@@ -115,6 +114,7 @@
                   Warning: {{warning}}
                 </p>
                 <span class="text-base">{{ download.description }}</span>
+              </p>
             </div>
           </div>
         </div>

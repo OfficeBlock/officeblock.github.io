@@ -1,10 +1,11 @@
-const colors = require("tailwindcss/colors");
-export default {
+import { defineNuxtConfig } from 'nuxt/config';
+import colors from 'tailwindcss/colors';
+export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: "static", 
 
   // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
+  meta: {
     title: "officeblock.github.io",
     htmlAttrs: {
       lang: "en"
@@ -18,32 +19,42 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/css/tailwind.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/click-outside.js'],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  //components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss",
-    '@nuxtjs/color-mode'
+    
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@pinia/nuxt', '@nuxtjs/color-mode', '@nuxtjs/tailwindcss'],
   colorMode: {
     classSuffix: ''
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    postcss: {
+      postcssOptions: require('./postcss.config.js'),
+    },
+  },
   tailwindcss: {
     jit: true,
     config: {
+      content: [
+        './assets/**/*.{vue,js,css}',
+        './components/**/*.{vue,js}',
+        './layouts/**/*.vue',
+        './pages/**/*.vue',
+        './plugins/**/*.{js,ts}',
+        './nuxt.config.{js,ts}',
+        ],
+
       darkMode: 'class',
 
       theme: {
@@ -61,4 +72,4 @@ export default {
       }
     }
   }
-};
+});

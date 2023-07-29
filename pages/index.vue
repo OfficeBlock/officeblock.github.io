@@ -1,15 +1,15 @@
 <template>
   <div>
     <main>
-      <div class="min-h-screen max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        <div class="py-12 ">
-          <div class="max-w-lg mb-8">
+      <div class="flex justify-center min-w-full py-6 sm:px-6 lg:px-8">
+        <div class="py-12 w-max">
+          <div class="max-w-2xl mb-8">
             <h2 class="text-4xl md:text-4xl mb-4 font-bold font-heading">
-              <center><span>OfficeBlock</span></center>
+              <span>OfficeBlock</span>
             </h2>
-            <center><p class="text-gray-500 leading-relaxed">
+            <p class="text-gray-500 leading-relaxed">
               OfficeBlock is an archive of creative suite games, such as games made in Microsoft PowerPoint.
-            </p></center>
+            </p>
           </div>
           <div class="hidden"><!-- What buttons should go here?-->
             <a
@@ -31,7 +31,7 @@
 export default {
   head() {
     return {
-    title: 'Home - OfficeBlock'
+      title: 'Home - OfficeBlock'
     }
   },
 
