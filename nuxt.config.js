@@ -33,7 +33,7 @@ export default defineNuxtConfig({
     
   ],
 
-  modules: ['@pinia/nuxt', '@nuxtjs/color-mode', '@nuxtjs/tailwindcss'],
+  modules: ['@pinia/nuxt', '@nuxtjs/color-mode', '@nuxtjs/tailwindcss', 'nuxt-headlessui'],
   colorMode: {
     classSuffix: ''
   },
