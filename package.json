@@ -6,7 +6,8 @@
     "dev": "nuxi dev",
     "build": "nuxi generate",
     "start": "nuxi start",
-    "generate": "nuxi generate"
+    "generate": "nuxi generate",
+    "deploy": "nuxi generate && touch .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
