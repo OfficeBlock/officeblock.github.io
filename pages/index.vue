@@ -19,7 +19,7 @@
               We also have a <NuxtLink class="alink" to="https://discord.gg/ctPpgVxPAT">Discord server</NuxtLink> which you can join.
           </p>
         </div>
-        <img src="images/example.png" class="block md:inline self-center w-4/5 lg:w-1/2 my-0 mx-auto"/>
+        <img src="/images/example.png" class="block md:inline self-center w-4/5 lg:w-1/2 my-0 mx-auto"/>
       </div>
     </main>
   </div>
