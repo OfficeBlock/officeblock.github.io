@@ -11,7 +11,7 @@
   export default {
     head() {
       return {
-        title: 'Search - OfficeBlock'
+        title: 'Contact Us - OfficeBlock'
       }
     },
   }

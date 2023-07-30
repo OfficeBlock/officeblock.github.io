@@ -7,7 +7,7 @@
           Frequently asked questions
         </h2>
         <ul>
-          <li class="m-2" v-for="item of questions" :key="item.q + item.answer">
+          <li class="m-2" v-for="item of questions" :key="item.q + item.answer" :id="item.anchor">
             <span class="text-2xl font-bold">{{ item.q }}</span>
             <p v-html="item.answer"></p>
           </li>
@@ -27,16 +27,18 @@ export default {
     return {
       questions: [
         {
+          anchor: "antivirus",
           q: "Help! I use Avast or AVG, and OfficeBlock isn't working.",
           answer: "These antiviruses (and some other smaller ones) interfere with the Flashpoint Launcher, which is what OfficeBlock uses to display the games and to run them. \
           You can follow <a class='alink' href='https://flashpointarchive.org/datahub/Troubleshooting_Antivirus_Interference'>these steps</a> to set an exclusion."
         },
         {
-          q: "Do you have a Trello board or something?",
-          answer: "Yes, we have a Trello board which you can view <a class='alink' href='https://trello.com/b/sZapXnRX/officeblock'>here</a>."
+          anchor: "discord",
+          q: "How can I help? Do you have a Discord server?",
+          answer: "You can join our Discord server using <a class='alink' href='https://discord.gg/ctPpgVxPAT'>this link</a>. The #rules-and-faq channel includes ways to help."
         }
       ]
     };
-  }
+  } 
 };
 </script>
