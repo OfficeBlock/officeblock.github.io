@@ -10,7 +10,7 @@
     "deploy": "nuxi generate && touch .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.11",
+    "@pinia/nuxt": "^0.5.1",
     "nuxt": "^3.6.5",
     "nuxt-headlessui": "^1.1.4",
     "vue": "^3.3.4"
